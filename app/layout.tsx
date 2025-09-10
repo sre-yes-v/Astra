@@ -1,11 +1,13 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Montserrat } from 'next/font/google';
+import './globals.css';
+import Header from '@/components/ui/Header';
 
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Astra 2k25",
-  description: "Tech Fest | Sacred Heart College",
+  title: 'ASTRA',
+  description: 'Ultimate Tech Festival by Sacred Heart College',
 };
 
 export default function RootLayout({
@@ -15,9 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
-        {children}
+      <body className={`${montserrat.className}  flex flex-col min-h-screen `}>
+        <Header/>
+        <div className="flex-grow "> 
+          <div> 
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );

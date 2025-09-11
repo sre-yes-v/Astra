@@ -2,9 +2,8 @@ import Hero from "./Hero";
 
 export default function Main(){
     return(
-        <div className=" bg-cover bg-center h-screen flex items-center justify-center"
-        style={{ backgroundImage: "url('/images/bg.png')" }}>
+        <main className="container mx-auto  max-w-full space-y-5 md:space-y-15">
             <Hero/>
-        </div>
+        </main>
     )
 }

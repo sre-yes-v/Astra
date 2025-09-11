@@ -14,7 +14,7 @@ export default function Hero(){
   <Image
     src={planet}
     alt="Animated Planet"
-    className="top-0 -mt-30 md:-mt-155 left-0 animate-planet-rotate w-120 h-100 md:w-230 md:h-230 mx-auto"
+    className="top-0 -mt-35 md:-mt-155 left-0 animate-planet-rotate w-100 h-95 md:w-230 md:h-230 mx-auto"
   />
 </div>
         <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.9) 100%)' }}></div>
@@ -29,10 +29,10 @@ export default function Hero(){
           Where Innovation Meets Excellence. Join Us For the Ultimate Tech Festival
         </p>
         <div className="flex md:flex-row justify-evenly space-x-2 sm:space-x-5 sm:justify-center mt-10">
-          <Button href="#register" className="animate-fade-in-up delay-700 bg-gradient-to-r from-[#6D5FB2] to-[#322A58] hover:from-[#907ee8] hover:to-[#534791] text-[#fff]">
+          <Button href="#register" className="animate-fade-in-up delay-100 bg-gradient-to-r from-[#6D5FB2] to-[#322A58] hover:from-[#907ee8] hover:to-[#534791] text-[#fff]">
             Register Now <Image src={linkIcon} alt="external linking" width={16} height={16} />
           </Button>
-          <Button href="#events" className="animate-fade-in-up delay-900  bg-transparent hover:bg-[#9C87FF] text-[#9C87FF] hover:text-[#fff] border border-[#9C87FF]">
+          <Button href="#events" className="animate-fade-in-up delay-100  bg-transparent hover:bg-[#9C87FF] text-[#9C87FF] hover:text-[#fff] border border-[#9C87FF]">
             View Events <Image src={arrowDownIcon} alt="Scroll down icon " width={16} height={16} className="animate-scroll-down" />
           </Button>
         </div>

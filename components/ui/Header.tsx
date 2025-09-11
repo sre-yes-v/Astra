@@ -87,7 +87,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <Link href="/">
-            <Image src={logo} alt="Astra logo" width={100} height={32} className="w-auto h-8" />
+            <Image src={logo} alt="Astra logo"  className="w-auto h-5 md:h-8" />
           </Link>
         </div>
 
@@ -175,7 +175,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, targetId, activeLink, onClick, 
       className={`relative text-gray-400 font-normal text-base transition-colors duration-300
         hover:text-blue-600
         ${activeLink === targetId ? 'text-blue-600' : ''}
-        before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px]
+        before:content-[''] before:rounded-2xl before:absolute before:top-5 before:left-0 before:w-full before:h-[3px]
         before:bg-blue-600 before:transition-transform before:duration-300
         before:scale-x-0 ${activeLink === targetId ? 'before:scale-x-100' : ''}
       `}
